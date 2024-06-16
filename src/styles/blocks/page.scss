@@ -40,7 +40,6 @@
   }
 
   &__container {
-
     max-width: 1480px;
     padding: 0 20px;
 
@@ -52,6 +51,22 @@
 
     @include onDesktop {
       padding: 0 105px;
+    }
+  }
+
+  &__flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @include onTablet {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    @include onDesktop {
+      flex-direction: row;
+      flex-wrap: nowrap;
     }
   }
 

@@ -12,6 +12,10 @@
   justify-content: center;
   gap: 40px;
 
+  @include onDesktop {
+    max-width: initial;
+  }
+
   &__play {
     cursor: pointer;
     transition: all $duration;
@@ -81,5 +85,4 @@
       top: -50px;
     }
   }
-
 }

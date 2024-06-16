@@ -14,7 +14,6 @@
 
   @include onDesktop {
     position: sticky;
-
   }
 
   &::after {
@@ -69,7 +68,6 @@
       left: 35px;
       top: -9px;
 
-
       @include onDesktop {
         width: initial;
         left: 35%;
@@ -77,7 +75,6 @@
       }
     }
   }
-
 
   &__list {
     display: none;
@@ -107,24 +104,15 @@
     display: flex;
     align-items: center;
     height: 100%;
-    font-family: "DroidSans", sans-serif;
-    text-decoration: none;
-    color: $white;
-    font-weight: bold;
     font-size: 13px;
-    text-transform: uppercase;
-    line-height: 1.2;
+
+    @extend %link;
 
     &--current {
       color: $colored;
 
       &::after {
-        position: absolute;
-        content: '';
-        left: 0;
-        height: 2px;
-        background-color: $colored;
-        width: 100%;
+        @extend %linkAfter;
         display: none;
 
         @include onDesktop {
