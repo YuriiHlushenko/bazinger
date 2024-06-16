@@ -46,13 +46,15 @@
 
   &__logo {
     position: relative;
-    font-family: "DroidSans", sans-serif;
-    font-weight: 600;
+    @extend %link;
+    text-transform: none;
     font-size: 24px;
-    font-weight: bold;
-    line-height: 1.2;
     text-align: center;
     z-index: 1;
+
+    &:hover {
+      color: inherit;
+    }
 
     @include onDesktop {
       font-size: 36px;
