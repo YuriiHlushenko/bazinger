@@ -6,13 +6,13 @@ const mainSections = document.querySelectorAll("section");
 const setCurrentLink = () => {
   if (window.screen.width > 1279) {
     window.addEventListener("scroll", event => {
-      const fromTop = window.scrollY + 100;
+      const fromTop = window.scrollY + 150;
 
       headerLinks.forEach((link, i) => {
 
         if (i !== 4 && i !== 5) {
           const hash = link.href.split('/').slice(-1)[0].slice(1);
-          console.log(hash);
+
           const section = document.getElementById(hash);
 
           if (

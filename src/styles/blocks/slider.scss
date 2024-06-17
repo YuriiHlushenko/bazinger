@@ -36,6 +36,8 @@
     @include onDesktop {
       background-position: bottom;
       height: calc(100vw * 0.47);
+      max-height: calc(100vh - 104px);
+      background-position: center;
     }
   }
 
